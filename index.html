@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Muhammad Ahsan – Data Analyst portfolio. Python, SQL, Tableau, Power BI, Excel." />
+  <title>Muhammad Ahsan | Data Analyst</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;500&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- NAVIGATION -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">MA<span class="dot">.</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#resume">Resume</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-cta" onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Hire Me</button>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero" id="hero">
+    <canvas id="particles"></canvas>
+    <div class="hero-inner">
+
+      <!-- Left: Text -->
+      <div class="hero-text reveal">
+        <p class="hero-eyebrow"><span class="dot-pulse"></span> Available for opportunities</p>
+        <h1 class="hero-name">Muhammad<br /><span class="gradient-text">Ahsan</span></h1>
+        <p class="hero-title">Data Analyst</p>
+        <p class="hero-intro">
+          Passionate about transforming raw data into meaningful insights using
+          Python, SQL, Tableau, Power BI, and Excel. Experienced in data cleaning,
+          visualization, and analytical problem-solving.
+        </p>
+        <div class="hero-actions">
+          <a href="Muhammad_Ahsan_CV.pdf" class="btn btn-primary" download>
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            Download Resume
+          </a>
+          <a href="#contact" class="btn btn-outline">Get in Touch</a>
+        </div>
+        <!-- Social icons -->
+        <div class="hero-socials">
+          <a href="https://github.com/ahsanbuttdev" class="social-icon" aria-label="GitHub" title="GitHub" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-ahsan-494b52376" class="social-icon" aria-label="LinkedIn" title="LinkedIn" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.55v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.36V9h3.41v1.56h.05c.47-.9 1.63-1.85 3.35-1.85 3.59 0 4.25 2.36 4.25 5.43v6.31zM5.34 7.43a2.06 2.06 0 110-4.12 2.06 2.06 0 010 4.12zM3.56 20.45h3.56V9H3.56v11.45zM22.22 0H1.77C.8 0 0 .77 0 1.72v20.56C0 23.23.8 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.72V1.72C24 .77 23.2 0 22.22 0z"/></svg>
+          </a>
+          <a href="https://public.tableau.com/app/profile/muhammad.ahsan7262/vizzes" class="social-icon" aria-label="Tableau Public" title="Tableau Public" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.02 3.77V.63H12.98v3.14h3.14v1.96h-3.14v3.14h-1.96V5.73H7.88V3.77h3.14zM5.5 12.98v-1.96H2.38v1.96H5.5zm13.12 0H15.5v-1.96h3.12v1.96zm-6.6 6.62v3.13h1.96v-3.13H12zm0-13.22V3.25h1.96v3.13H12zM5.5 17.71v-1.96H2.38v1.96H5.5zm13.12 0H15.5v-1.96h3.12v1.96zM11.02 20.73v3.13H12.98v-3.13h-1.96zm0-13.23V4.37H12.98V7.5h-1.96z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Right: Profile photo -->
+      <div class="hero-image reveal reveal-delay">
+        <div class="avatar-wrapper">
+          <div class="avatar-ring"></div>
+          <div class="avatar-photo">
+            <img src="profile.jpeg" alt="Muhammad Ahsan – Data Analyst" />
+          </div>
+          <div class="float-badge badge-python">Python</div>
+          <div class="float-badge badge-sql">SQL</div>
+          <div class="float-badge badge-bi">Power BI</div>
+        </div>
+      </div>
+
+    </div>
+    <div class="scroll-hint">
+      <span>Scroll</span>
+      <div class="scroll-arrow"></div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section class="section about" id="about">
+    <div class="container">
+      <p class="section-eyebrow reveal">Who I am</p>
+      <h2 class="section-title reveal">About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a <strong>Data Analyst</strong> with hands-on project experience turning messy,
+            complex datasets into clear narratives that drive smarter decisions.
+            My work spans the full analytical pipeline — from sourcing and cleaning data
+            to building interactive dashboards that non-technical stakeholders can actually use.
+          </p>
+          <p>
+            I work comfortably with <strong>Python</strong> (Pandas, NumPy),
+            <strong>SQL & PostgreSQL</strong>, <strong>Tableau</strong>, <strong>Power BI</strong>,
+            and <strong>Excel</strong>. I also have working knowledge of <strong>HTML, CSS, and JavaScript</strong>,
+            which helps me communicate technical findings in polished, web-ready formats.
+          </p>
+          <p>
+            I'm genuinely curious about data and the stories it holds — whether that's
+            uncovering a hidden trend in housing prices or mapping the spread of a global pandemic.
+            I believe the best analysis is the kind that changes what you do next.
+          </p>
+        </div>
+        <div class="about-stats reveal reveal-delay">
+          <div class="stat-card glass">
+            <span class="stat-num gradient-text">3+</span>
+            <span class="stat-label">Featured Projects</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num gradient-text">12+</span>
+            <span class="stat-label">Technical Skills</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num gradient-text">5+</span>
+            <span class="stat-label">Tools Mastered</span>
+          </div>
+          <div class="stat-card glass">
+            <span class="stat-num gradient-text">∞</span>
+            <span class="stat-label">Curiosity</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS SECTION -->
+  <section class="section skills" id="skills">
+    <div class="container">
+      <p class="section-eyebrow reveal">What I work with</p>
+      <h2 class="section-title reveal">Skills & Tools</h2>
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-badge glass"><span class="skill-icon">🐍</span><span class="skill-name">Python</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🐼</span><span class="skill-name">Pandas</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🗄️</span><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" data-width="92"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🐘</span><span class="skill-name">PostgreSQL</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">📊</span><span class="skill-name">Tableau</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">📈</span><span class="skill-name">Power BI</span><div class="skill-bar"><div class="skill-fill" data-width="87"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">📉</span><span class="skill-name">Excel</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🎨</span><span class="skill-name">Data Visualization</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🧹</span><span class="skill-name">Data Cleaning</span><div class="skill-bar"><div class="skill-fill" data-width="93"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🌐</span><span class="skill-name">HTML</span><div class="skill-bar"><div class="skill-fill" data-width="70"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">🎨</span><span class="skill-name">CSS</span><div class="skill-bar"><div class="skill-fill" data-width="65"></div></div></div>
+          <div class="skill-badge glass"><span class="skill-icon">⚡</span><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="60"></div></div></div>
+        </div>
+      </div>
+      <div class="skills-group reveal">
+        <h3 class="skills-group-title">Tools & Platforms</h3>
+        <div class="tools-grid">
+          <div class="tool-chip glass"><span>📓</span> Jupyter Notebook</div>
+          <div class="tool-chip glass"><span>🐍</span> Anaconda Navigator</div>
+          <div class="tool-chip glass"><span>💻</span> VS Code</div>
+          <div class="tool-chip glass"><span>🐘</span> pgAdmin</div>
+          <div class="tool-chip glass"><span>🐬</span> MySQL</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS SECTION -->
+  <section class="section projects" id="projects">
+    <div class="container">
+      <p class="section-eyebrow reveal">What I've built</p>
+      <h2 class="section-title reveal">Featured Projects</h2>
+      <div class="projects-grid">
+
+        <!-- Project 1: Netflix -->
+        <article class="project-card glass reveal featured">
+          <div class="project-badge">⭐ Featured</div>
+          <div class="project-screenshot">
+            <img src="netflix.png" alt="Netflix Content Analytics Dashboard" />
+          </div>
+          <div class="project-header">
+            <div class="project-icon">🎬</div>
+            <div class="project-tools">
+              <span class="tag">Python</span>
+              <span class="tag">SQL</span>
+              <span class="tag">Tableau</span>
+            </div>
+          </div>
+          <h3 class="project-title">Netflix Content Analytics</h3>
+          <p class="project-desc">
+            Analyzed Netflix content data to uncover trends in movies and TV shows —
+            content distribution, genres, ratings, and release patterns.
+            Built visual dashboards and data-driven reports to support analytical decision-making.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/ahsanbuttdev/Netflix-Analysis" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Repo
+            </a>
+            <a href="https://public.tableau.com/app/profile/muhammad.ahsan7262/viz/netflix_project_tableau/Home#4" class="btn btn-sm btn-primary" target="_blank" rel="noopener">
+              📊 Tableau Dashboard
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 2: Nashville -->
+        <article class="project-card glass reveal">
+          <div class="project-screenshot">
+            <img src="nashville.png" alt="Nashville Housing Market Analysis Dashboard" />
+          </div>
+          <div class="project-header">
+            <div class="project-icon">🏠</div>
+            <div class="project-tools">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+            </div>
+          </div>
+          <h3 class="project-title">Nashville Housing Market Analysis</h3>
+          <p class="project-desc">
+            Performed data cleaning, transformation, and exploratory analysis on housing market data.
+            Identified trends, improved data quality, and built interactive Power BI dashboards
+            to visualize market insights.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/ahsanbuttdev/Nashville-Housing-Insights" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Repo
+            </a>
+          </div>
+        </article>
+
+        <!-- Project 3: COVID -->
+        <article class="project-card glass reveal">
+          <div class="project-screenshot">
+            <img src="covid.png" alt="COVID-19 Data Insights Dashboard" />
+          </div>
+          <div class="project-header">
+            <div class="project-icon">🦠</div>
+            <div class="project-tools">
+              <span class="tag">SQL</span>
+              <span class="tag">Power BI</span>
+            </div>
+          </div>
+          <h3 class="project-title">COVID-19 Data Insights Dashboard</h3>
+          <p class="project-desc">
+            Analyzed COVID-19 datasets to track case trends, deaths, recoveries, and geographical
+            patterns. Developed interactive dashboards and generated meaningful insights through
+            SQL analysis and Power BI visualizations.
+          </p>
+          <div class="project-actions">
+            <a href="https://github.com/ahsanbuttdev/Covid-19-Global-Insights" class="btn btn-sm btn-outline" target="_blank" rel="noopener">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.3 3.44 9.8 8.2 11.38.6.11.82-.26.82-.58v-2.03c-3.34.73-4.04-1.61-4.04-1.61-.54-1.38-1.33-1.75-1.33-1.75-1.09-.74.08-.73.08-.73 1.2.09 1.84 1.24 1.84 1.24 1.07 1.83 2.8 1.3 3.49 1 .1-.78.42-1.3.76-1.6-2.66-.3-5.47-1.33-5.47-5.93 0-1.31.47-2.38 1.24-3.22-.12-.3-.54-1.52.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 013-.4c1.02 0 2.04.13 3 .4 2.28-1.55 3.29-1.23 3.29-1.23.66 1.66.24 2.88.12 3.18.77.84 1.23 1.91 1.23 3.22 0 4.61-2.81 5.63-5.48 5.92.43.37.82 1.1.82 2.22v3.29c0 .32.22.7.83.58C20.56 21.8 24 17.3 24 12c0-6.63-5.37-12-12-12z"/></svg>
+              GitHub Repo
+            </a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- JOURNEY / TIMELINE SECTION -->
+  <section class="section journey" id="journey">
+    <div class="container">
+      <p class="section-eyebrow reveal">How I got here</p>
+      <h2 class="section-title reveal">My Journey</h2>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <span class="tl-num">01</span>
+            <h3>Learning Data Analytics</h3>
+            <p>Discovered the field of data analytics and committed to building a strong foundation in statistics, data thinking, and analytical reasoning.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <span class="tl-num">02</span>
+            <h3>SQL & Databases</h3>
+            <p>Mastered SQL for data querying, joins, aggregations, and window functions. Worked with PostgreSQL and MySQL to manage and analyze structured data.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <span class="tl-num">03</span>
+            <h3>Python & Pandas</h3>
+            <p>Built proficiency in Python for data manipulation and analysis using Pandas and NumPy — cleaning messy datasets, feature engineering, and exploratory analysis.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <span class="tl-num">04</span>
+            <h3>Data Visualization</h3>
+            <p>Learned to communicate data stories through charts, graphs, and dashboards — turning numbers into narratives that stakeholders can act on.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot"></div>
+          <div class="tl-content glass">
+            <span class="tl-num">05</span>
+            <h3>Power BI & Tableau Projects</h3>
+            <p>Applied skills to real-world projects — building interactive dashboards for housing data, COVID-19 trends, and Netflix content analytics.</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="tl-dot active"></div>
+          <div class="tl-content glass active-card">
+            <span class="tl-num">06</span>
+            <h3>Portfolio Development <span class="live-badge">Now</span></h3>
+            <p>Packaging everything into a professional portfolio to demonstrate skills and connect with data-driven organizations looking for analytical talent.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- RESUME SECTION -->
+  <section class="section resume-sec" id="resume">
+    <div class="container">
+      <div class="resume-card glass reveal">
+        <div class="resume-left">
+          <p class="section-eyebrow">Ready to hire?</p>
+          <h2 class="section-title" style="margin-top: 0.5rem;">My Resume</h2>
+          <p>
+            My resume details my technical skills, project work, and analytical experience.
+            If you're looking for a data analyst who delivers real insights — not just charts —
+            I'd love to connect.
+          </p>
+          <a href="Muhammad_Ahsan_CV.pdf" class="btn btn-primary" download style="margin-top: 1.5rem; display: inline-flex;">
+            <svg viewBox="0 0 20 20" fill="currentColor" width="18" height="18"><path fill-rule="evenodd" d="M3 17a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zm3.293-7.707a1 1 0 011.414 0L9 10.586V3a1 1 0 112 0v7.586l1.293-1.293a1 1 0 111.414 1.414l-3 3a1 1 0 01-1.414 0l-3-3a1 1 0 010-1.414z" clip-rule="evenodd"/></svg>
+            Download Resume (PDF)
+          </a>
+        </div>
+        <div class="resume-right">
+          <div class="resume-preview">
+            <div class="rp-line wide"></div>
+            <div class="rp-line"></div>
+            <div class="rp-section">
+              <div class="rp-line short"></div>
+              <div class="rp-line medium"></div>
+              <div class="rp-line medium"></div>
+            </div>
+            <div class="rp-section">
+              <div class="rp-line short"></div>
+              <div class="rp-line wide"></div>
+              <div class="rp-line medium"></div>
+              <div class="rp-line medium"></div>
+            </div>
+            <div class="rp-section">
+              <div class="rp-line short"></div>
+              <div class="rp-tag"></div>
+              <div class="rp-tag"></div>
+              <div class="rp-tag"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT SECTION -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <p class="section-eyebrow reveal">Let's talk</p>
+      <h2 class="section-title reveal">Get in Touch</h2>
+      <p class="contact-sub reveal">Have a project in mind or want to discuss a role? I'm always open to new opportunities.</p>
+      <div class="contact-grid">
+
+        <div class="contact-links reveal">
+          <a href="mailto:mahsanbutt724@gmail.com.com" class="contact-link glass">
+            <span class="cl-icon">📧</span>
+            <div class="cl-text">
+              <span class="cl-label">Email</span>
+              <span class="cl-val">mahsanbutt724@gmail.com</span>
+            </div>
+            <svg class="cl-arrow" viewBox="0 0 20 20" fill="currentColor" width="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+          </a>
+          <a href="https://www.linkedin.com/in/muhammad-ahsan-494b52376" class="contact-link glass" target="_blank" rel="noopener">
+            <span class="cl-icon">💼</span>
+            <div class="cl-text">
+              <span class="cl-label">LinkedIn</span>
+              <span class="cl-val">linkedin.com/in/muhammad-ahsan-494b52376</span>
+            </div>
+            <svg class="cl-arrow" viewBox="0 0 20 20" fill="currentColor" width="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+          </a>
+          <a href="https://github.com/ahsanbuttdev" class="contact-link glass" target="_blank" rel="noopener">
+            <span class="cl-icon">🐙</span>
+            <div class="cl-text">
+              <span class="cl-label">GitHub</span>
+              <span class="cl-val">github.com/ahsanbuttdev</span>
+            </div>
+            <svg class="cl-arrow" viewBox="0 0 20 20" fill="currentColor" width="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+          </a>
+          <a href="https://public.tableau.com/app/profile/muhammad.ahsan7262/vizzes" class="contact-link glass" target="_blank" rel="noopener">
+            <span class="cl-icon">📊</span>
+            <div class="cl-text">
+              <span class="cl-label">Tableau Public</span>
+              <span class="cl-val">public.tableau.com/muhammad.ahsan7262</span>
+            </div>
+            <svg class="cl-arrow" viewBox="0 0 20 20" fill="currentColor" width="16"><path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"/></svg>
+          </a>
+        </div>
+
+        <form
+  action="https://formspree.io/f/mjgdjyva"
+  method="POST"
+  class="contact-form glass reveal reveal-delay"
+>
+  <h3 class="form-title">Send a Message</h3>
+
+  <div class="form-group">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="your@email.com"
+      required
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="subject">Subject</label>
+    <input
+      type="text"
+      id="subject"
+      name="subject"
+      placeholder="What's this about?"
+    />
+  </div>
+
+  <div class="form-group">
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="4"
+      placeholder="Tell me about your project or opportunity..."
+      required
+    ></textarea>
+  </div>
+
+  <button type="submit" class="btn btn-primary w-full">
+    Send Message →
+  </button>
+</form>
+
+      </div>
+    </div>
+  </section>
+
+
+
+<footer class="footer">
+  <div class="container footer-inner">
+    <!-- Brand -->
+    <div class="footer-brand">
+      <h3>Muhammad Ahsan</h3>
+      <p class="footer-role">
+        Data Analyst | SQL • Python • Tableau
+      </p>
+      <p class="footer-desc">
+        Transforming raw data into insights using SQL, Python, Power BI, and Tableau.
+        Focused on building real-world data solutions.
+      </p>
+    </div>
+
+    <!-- Quick links (no heading) -->
+    <nav class="footer-nav" aria-label="Footer navigation">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#resume">Resume</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <!-- Socials (no heading) -->
+    <div class="footer-socials">
+      <a href="mailto:mahsanbutt724@gmail.com" class="social-link">
+        <span class="social-icon">📧</span> Email
+      </a>
+      <a href="https://github.com/ahsanbuttdev" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="social-icon">💻</span> GitHub
+      </a>
+      <a href="https://www.linkedin.com/in/muhammad-ahsan-494b52376" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="social-icon">💼</span> LinkedIn
+      </a>
+      <a href="https://public.tableau.com/app/profile/muhammad.ahsan7262/vizzes" target="_blank" rel="noopener noreferrer" class="social-link">
+        <span class="social-icon">📊</span> Tableau
+      </a>
+    </div>
+  </div>
+
+  <div class="footer-bottom">
+    <div class="footer-divider"></div>
+    <p class="footer-copy">© 2026 Muhammad Ahsan — All Rights Reserved</p>
+  </div>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
